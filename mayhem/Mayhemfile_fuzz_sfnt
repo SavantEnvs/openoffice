@@ -1,0 +1,8 @@
+project: savantenvs/openoffice
+target: fuzz_sfnt
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_sfnt/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_sfnt
+    libfuzzer: true
